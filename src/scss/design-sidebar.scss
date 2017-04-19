@@ -1,0 +1,130 @@
+// Design sidebar styles begin
+.design-sidebar .design-aside {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform, opacity, 0.8s;
+	z-index: 20;
+}
+.design-aside {
+	display: flex;
+	transition: transform, opacity, 0.8s;
+	transform: translateY(-30px);
+	opacity: 0;
+	z-index: -1;
+	position: absolute;
+	top: 78px;
+	right: 0;
+	flex-direction: column;
+	width: 291px;
+	background: #fff;
+	padding: 10px 30px;
+	overflow: hidden;
+	box-shadow: -1px 0px 12px 0px rgba(50, 50, 50, 0.5);
+	input, 
+	select {
+		outline: none!important;
+		border: 1px solid $icons-dis-color;
+		border-radius: 7px;
+		background: $bg-color;
+		height: 36px;
+		width: 100%;
+		padding: 6px 12px;
+		@include text ($header-font-color, $primary-font, 16px, 300);
+	}
+	input[type="checkbox"] {
+		width: 24px;
+		height: 19px;
+		margin-top: 8px;
+		& + label {
+			margin: 6px 0 12px 8px;
+			@include text ($header-common-color, $primary-font, 16px, 400);
+		}
+	}
+	input[type=color] {
+		width: 80px;
+		height: 70px;
+		margin-top: -13px;
+		margin-left: -17px;
+		font-size: 0;
+	}
+	label {
+		margin-bottom: 2px;
+		display: inline-block;
+	}
+}
+.aside__select-wrapper {
+	margin-bottom: 10px;
+	position: relative;
+	&:before {
+		content: "";
+		background: $bg-color url(../images/caret-down.png) no-repeat 50% 50%;
+		position: absolute;
+		width: 34px;
+		height: 34px;
+		right: 1px;
+		top: 1px;
+	}
+}
+.aside__color-wrap {
+	overflow: hidden;
+	width: 40px;
+	border-radius: 7px;
+	height: 40px;
+}
+.accordion .is-hidden + .accordion__sub-item  {
+	display: none;
+}
+.accordion__trigger {
+	cursor: pointer;
+}
+.accordion__item {
+	position: relative;
+	margin-bottom: 5px;
+	&:before {
+		content: "";
+		width: calc(100% + 60px);
+		height: 2px;
+		border-bottom: 1px solid $header-bg-color; 
+		position: absolute;
+		bottom: 0;
+		left: -30px;
+	}
+	&:last-child:before {
+		display: none;
+	}
+}
+.accordion__sub-item {
+	padding: 8px 0 16px;
+	position: relative;
+	&:before {
+		content: "";
+		width: calc(100% + 60px);
+		height: 2px;
+		position: absolute;
+		border-top: 1px dashed $header-bg-color;
+		top: 0;
+		left: -30px;
+	}
+}
+.aside__color-check {
+	display: flex;
+	margin-bottom: 6px;
+	.aside__color-label {
+		border: none;
+		margin-left: 42px;
+		width: 190px;
+	}
+}
+.aside__color-wrap {
+	overflow: hidden;
+	width: 38px;
+	border-radius: 7px;
+	margin-right: 14px;
+	margin-bottom: 6px;
+	height: 38px;
+	position: absolute;
+}
+.aside__color-h {
+	margin-top: 18px;
+}
+//Design sidebar styles end

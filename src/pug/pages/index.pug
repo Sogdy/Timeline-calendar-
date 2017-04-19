@@ -1,0 +1,504 @@
+extends ../layout
+
+block content
+	// Calendar header + timeline begin
+	section.container.calendar__header.default
+		.calendar__block.calendar__timeline  
+			.calendar__row.calendar__row_container
+				.calendar__col_header.calendar__timeline-header
+					img(src="images/calendar-timline-icon.png" alt="Icon: calendar")
+				.calendar__col_subheader.calendar__timeline-subheader
+					time(datetime="2016-01-01") 01.01.2016
+					p -
+					time(datetime="2018-01-01") 01.01.2018
+				.calendar__col_container
+					.calendar__block.timeline
+						// Timeline begin
+						.calendar__row.timeline__wrap
+							//input(type="range" min="1" max="24" id="size" value="1")
+							span(class="example-val calendar__col" id="date-start")
+							div(id="date-slider" class="noUi-target noUi-ltr noUi-horizontal calendar__col calendar__col_ful-width")
+							span(class="example-val calendar__col" id="date-end")
+						// Timeline end
+						.calendar__row
+							.calendar__col_container.calendar__block
+								// Background table begin
+								.calendar__block.calendar__bg
+									.calendar__row.calendar__row_empty
+										include ../templates/calendar-row-bg
+								// Background table end
+								// Content table begin
+								.calendar__block.calendar__content
+									.calendar__row.calendar__row_empty
+										.calendar__col.calendar__col_span-3
+											p Q1&apos;16
+										.calendar__col.calendar__col_span-3
+											p Q2&apos;16
+										.calendar__col.calendar__col_span-1
+											p J&apos;16
+										.calendar__col.calendar__col_span-1
+											p A&apos;16
+										.calendar__col.calendar__col_span-1
+											p S&apos;16
+										.calendar__col.calendar__col_span-1
+											p O&apos;16
+										.calendar__col.calendar__col_span-1
+											p N&apos;16
+										.calendar__col.calendar__col_span-1
+											p D&apos;16
+										.calendar__col.calendar__col_span-6
+											p H1&apos;17
+										.calendar__col.calendar__col_span-3
+											p Q3&apos;17
+										.calendar__col.calendar__col_span-3
+											p Q4&apos;17
+								// Content table end
+	// Calendar header + timeline end
+
+	// Main calendar part begin
+	//Design section begin
+	section.category.container
+		// Background table begin
+		.calendar__block.calendar__bg  
+			.calendar__row.calendar__row_container
+				.calendar__col_header
+				.calendar__col_container
+					.calendar__block
+						.calendar__row 
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+						.calendar__row 
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										include ../templates/calendar-row-bg
+									.calendar__row 
+										include ../templates/calendar-row-bg
+		// Background table end
+		// Content table begin
+		.calendar__block.calendar__content
+			.calendar__row.calendar__row_container
+				.calendar__col_header
+					.calendar__col_header-wrap
+						h2.calendar__heading Design UX
+				.calendar__col_container
+					.calendar__block
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__research_subheader
+									h3.calendar__subheading Research
+							.calendar__col.calendar__col_span-6
+							.calendar__col.calendar__col_span-1.calendar__research
+								a(href="#" class="calendar__link") Dashboard
+							.calendar__col.calendar__col_span-2
+							.calendar__col.calendar__col_span-3.calendar__research
+								a(href="#" class="calendar__link") Template
+							.calendar__col.calendar__col_span-9
+							.calendar__col.calendar__col_span-3
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__inprogress_subheader
+									h3.calendar__subheading In progress
+							.calendar__col.calendar__col_span-6.calendar__inprogress
+								a(href="#" class="calendar__link") UX
+							.calendar__col.calendar__col_span-7
+							.calendar__col.calendar__col_span-1.calendar__inprogress
+								a(href="#" class="calendar__link") Flow design
+							.calendar__col.calendar__col_span-4
+							.calendar__col.calendar__col_span-3.calendar__inprogress
+								a(href="#" class="calendar__link") UX
+							.calendar__col.calendar__col_span-3
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__backlog_subheader 
+									h3.calendar__subheading Backlog
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-1.calendar__backlog 
+											a(href="#" class="calendar__link") Flat design
+										.calendar__col.calendar__col_span-9
+										.calendar__col.calendar__col_span-4
+									.calendar__row 
+										.calendar__col.calendar__col_span-2
+										.calendar__col.calendar__col_span-4.calendar__backlog 
+											a(href="#" class="calendar__link") Prototyping
+										.calendar__col.calendar__col_span-9
+										.calendar__col.calendar__col_span-3.calendar__backlog 
+											a(href="#" class="calendar__link") Private Policy
+										.calendar__col.calendar__col_span-6
+		// Content table end
+	//Design section end
+	// Slicing section begin
+	section.category.container
+		// Background table begin
+		.calendar__block.calendar__bg  
+			.calendar__row.calendar__row_container
+				.calendar__col_header
+				.calendar__col_container
+					.calendar__block
+						.calendar__row.calendar__row_empty
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										include ../templates/calendar-row-bg
+									.calendar__row 
+										include ../templates/calendar-row-bg
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										include ../templates/calendar-row-bg
+									.calendar__row 
+										include ../templates/calendar-row-bg
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										include ../templates/calendar-row-bg
+									.calendar__row 
+										include ../templates/calendar-row-bg
+		// Background table end
+		// Content table begin
+		.calendar__block.calendar__content
+			.calendar__row.calendar__row_container
+				.calendar__col_header
+					.calendar__col_header-wrap
+						h2.calendar__heading Slicing
+				.calendar__col_container
+					.calendar__block
+						.calendar__row.calendar__row_empty
+							.calendar__col_subheader
+								.calendar__col.calendar__research_subheader
+									h3.calendar__subheading Research
+							
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+								.calendar__col.calendar__inprogress_subheader
+									h3.calendar__subheading In progress
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										.calendar__col.calendar__col_span-8
+										.calendar__col.calendar__col_span-3.calendar__inprogress
+											a(href="#" class="calendar__link") Home page Design
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-3
+									.calendar__row 
+										.calendar__col.calendar__col_span-3
+										.calendar__col.calendar__col_span-1.calendar__inprogress
+											a(href="#" class="calendar__link") Home page Design
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-10
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+								.calendar__col.calendar__reopened_subheader
+									h3.calendar__subheading Reopened
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										.calendar__col.calendar__col_span-7
+										.calendar__col.calendar__col_span-3.calendar__reopened
+											a(href="#" class="calendar__link") Home page Design
+										.calendar__col.calendar__col_span-6
+										.calendar__col.calendar__col_span-2.calendar__reopened
+											a(href="#" class="calendar__link") Buttons
+										.calendar__col.calendar__col_span-6
+									.calendar__row 
+										.calendar__col.calendar__col_span-4.calendar__reopened
+											a(href="#" class="calendar__link") Planing
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-10
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+								.calendar__col.calendar__none_subheader
+									h3.calendar__subheading Status: None
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										.calendar__col.calendar__col_span-6
+										.calendar__col.calendar__col_span-2half.calendar__none
+											a(href="#" class="calendar__link") Terra
+										.calendar__col.calendar__col_span-2half
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-3
+									.calendar__row 
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-2
+										.calendar__col.calendar__col_span-1half
+										.calendar__col.calendar__col_span-1half.calendar__none 
+											a(href="#" class="calendar__link") Incognito
+										.calendar__col.calendar__col_span-9
+		// Content table end
+	// Slicing section end
+	// Architecture section begin
+	section.category.container
+		// Background table begin
+		.calendar__block.calendar__bg  
+			.calendar__row.calendar__row_container
+				.calendar__col_header
+				.calendar__col_container
+					.calendar__block
+						.calendar__row 
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+						.calendar__row 
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										include ../templates/calendar-row-bg
+									.calendar__row 
+										include ../templates/calendar-row-bg
+						.calendar__row 
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+						.calendar__row 
+							.calendar__col_subheader
+							include ../templates/calendar-row-bg
+		// Background table end
+		// Content  table begin
+		.calendar__block.calendar__content
+			.calendar__row.calendar__row_container
+				.calendar__col_header
+					.calendar__col_header-wrap
+						h2.calendar__heading Architecture
+				.calendar__col_container
+					.calendar__block
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__research_subheader
+									h3.calendar__subheading Research
+							.calendar__col.calendar__col_span-6
+							.calendar__col.calendar__col_span-1.calendar__research
+								a(href="#" class="calendar__link") Dashboard
+							.calendar__col.calendar__col_span-10
+							.calendar__col.calendar__col_span-7
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__inprogress_subheader
+									h3.calendar__subheading In progress
+							.calendar__col.calendar__col_span-10
+							.calendar__col.calendar__col_span-3
+							.calendar__col.calendar__col_span-1.calendar__inprogress
+								a(href="#" class="calendar__link") Flow design
+							.calendar__col.calendar__col_span-4
+							.calendar__col.calendar__col_span-3.calendar__inprogress
+								a(href="#" class="calendar__link") UX
+							.calendar__col.calendar__col_span-3
+						.calendar__row.calendar__row_container
+							.calendar__col_subheader
+								.calendar__col.calendar__backlog_subheader
+									h3.calendar__subheading Backlog
+							.calendar__col_container
+								.calendar__block 
+									.calendar__row 
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-1.calendar__backlog
+											a(href="#" class="calendar__link") Flat design
+										.calendar__col.calendar__col_span-10
+										.calendar__col.calendar__col_span-3
+									.calendar__row 
+										.calendar__col.calendar__col_span-2
+										.calendar__col.calendar__col_span-4.calendar__backlog
+											a(href="#" class="calendar__link") Prototyping
+										.calendar__col.calendar__col_span-9
+										.calendar__col.calendar__col_span-3.calendar__backlog
+											a(href="#" class="calendar__link") Private Policy
+										.calendar__col.calendar__col_span-6
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__new_subheader
+									h3.calendar__subheading New
+							.calendar__col.calendar__col_span-10
+							.calendar__col.calendar__col_span-7
+							.calendar__col.calendar__col_span-2.calendar__new
+								a(href="#" class="calendar__link") Programming
+							.calendar__col.calendar__col_span-5
+						.calendar__row 
+							.calendar__col_subheader
+								.calendar__col.calendar__completed_subheader
+									h3.calendar__subheading Completed
+							.calendar__col.calendar__col_span-2.calendar__completed
+								a(href="#" class="calendar__link") Meeting
+							.calendar__col.calendar__col_span-5
+							.calendar__col.calendar__col_span-1.calendar__completed
+								a(href="#" class="calendar__link") Meeting
+							.calendar__col.calendar__col_span-10
+							.calendar__col.calendar__col_span-8
+		// Content table end
+	// Architecture section end
+	// Main calendar part end
+
+	// Design aside (hidden) begin
+	aside.design-aside
+		h4.aside__title Design
+		.accordion
+			// Layout block begin
+			.accordion__item
+				a(data-trigger="trigger" class="accordion__trigger") 
+					h5.aside__title_menu Layout
+				.accordion__sub-item
+					label(for="header-select") Header
+					.aside__select-wrapper
+						select#header-select
+							option(disabled selected) Category
+							option(value="ux-design") UX Design
+							option(value="slicing") Slicing
+							option(value="architecture") Architecture
+
+					label(for="subheader-select") Subheader
+					.aside__select-wrapper
+						select#subheader-select
+							option(disabled selected) Status
+							option(value="research") Research
+							option(value="inprogress") In progress
+							option(value="backlog") Backlog
+							option(value="reopened") Reopened
+							option(value="none") Status: none
+							option(value="new") New
+							option(value="completed") Completed
+
+					label(for="item-label-select") Item label
+					.aside__select-wrapper
+						select#item-label-select
+							option(disabled selected) Task name
+							option(value="design") Home page Design
+							option(value="ux") UX
+							option(value="policy") Private Policy
+			// Layout block end
+			// Colors block begin
+			.accordion__item
+				a(data-trigger="trigger" class="accordion__trigger")
+					h5.aside__title_menu Colors
+				.accordion__sub-item
+					label(for="color-by-select") Color by
+					.aside__select-wrapper
+						select#color-by-select
+							option(disabled selected) Status
+							option(value="research") Research
+							option(value="inprogress") In progress
+							option(value="backlog") Backlog
+							option(value="reopened") Reopened
+							option(value="none") Status: none
+							option(value="new") New
+							option(value="completed") Completed
+
+					.aside__color-check
+						input(type="checkbox" id="subheader-inherits") 
+						label(for="subheader-inherits") Subheader inherits header color
+					label Header color
+					+aside__color-check([
+						{
+							color: "#f1f8fe",
+							id: "header1",
+							name:"Header"
+						},
+						{
+							color: "#89c0f1",
+							id: "header2",
+							name:""
+						},
+						{
+							color: "#1f8beb",
+							id: "header3",
+							name:""
+						}						
+					])
+
+					label.aside__color-h Subheaders color
+					+aside__color-check([
+						{
+							color: "#ff6197",
+							id: "subheader1",
+							name:"Research"
+						},
+						{
+							color: "#fed100",
+							id: "subheader2",
+							name:"In progress"
+						},
+						{
+							color: "#39cf7c",
+							id: "subheader3",
+							name:"Backlog"
+						},
+						{
+							color: "#ff6666",
+							id: "subheader4",
+							name:"Reopened"
+						},
+						{
+							color: "#00c5fe",
+							id: "subheader5",
+							name:"New"
+						},
+						{
+							color: "#7d97ae",
+							id: "subheader6",
+							name:"None"
+						}
+						
+					])
+			// Colors block end
+	// Design aside (hidden) end				
+	// Legend block begin				
+	.legend
+		img(src="images/legend-icon.png" alt="Icon: legend ask")
+		.legend__block
+			h5 Status:
+			+legend([
+				{
+					color: "#ff6197",
+					name:"Research"
+				},
+				{
+					color: "#fed100",
+					name:"In progress"
+				},
+				{
+					color: "#39cf7c",
+					name:"Backlog"
+				},
+				{
+					color: "#ff6666",
+					name:"Reopened"
+				},
+				{
+					color: "#00c5fe",
+					name:"New"
+				},
+				{
+					color: "#7d97ae",
+					name:"None"
+				}
+				
+			])
+	// Legend block end
+	// Expand icon
+	.expand
+		img(src="images/expand-icon.png" alt="Icon: expand")
+
+block jsIncludes
+	// jQuery (necessary for some JavaScript plugins)
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+
+	// Multiple slider for timeline
+	script(src="js/nouislider.min.js")
+
+	// General options 
+	script(src="js/script.js")

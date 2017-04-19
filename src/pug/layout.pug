@@ -1,0 +1,72 @@
+include templates/mixins
+
+doctype
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        block title
+            title
+        meta(name="description" content=" ")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+        // CSS
+
+        // Fonts
+        link(rel="stylesheet" href="css/fonts.css")
+        // Site Styles
+        link(rel="stylesheet" href="css/nouislider.min.css")
+        // Site Styles
+        link(rel="stylesheet" href="css/styles.css")
+
+    body
+        // Header block begin
+        header(class='header' id="header")
+            .container.header__wrap
+                h1.logo Logo Example
+                nav.header-nav
+                    ul.header-nav__style
+                        li.header-nav__style-item
+                            a(href="#" class="header-nav__style-link")
+                                img(src="images/style-icon-1.png" alt="Icon: style-icon")
+                        li.header-nav__style-item
+                            a(href="#" class="header-nav__style-link")
+                                img(src="images/style-icon-2.png" alt="Icon: style-icon")
+                        li.header-nav__style-item
+                            a(href="#" class="header-nav__style-link")
+                                img(src="images/style-icon-3.png" alt="Icon: style-icon")
+                        li.header-nav__style-item
+                            a(href="#" class="header-nav__style-link")
+                                img(src="images/style-icon-4.png" alt="Icon: style-icon")
+
+                    ul.header-nav__states
+                        li.header-nav__states-item.header-nav__states-item_save
+                            a(href="#" class="header-nav__states-link")
+                                button(class="calendar__button calendar__button_saved") Saved
+                        li.header-nav__states-item.header-nav__states-item_create
+                            a(href="#" class="header-nav__states-link")
+                                button(class="calendar__button calendar__button_create") Create
+                        li.header-nav__states-item
+                            a(href="#" class="header-nav__states-link")
+                                img(src="images/state-icon-1.png" alt="Icon: state-icon")
+                        li.header-nav__states-item
+                            a(href="#" class="header-nav__states-link header-nav__states-link_design")
+                                img(src="images/state-icon-2.png" alt="Icon: state-icon")
+                        li.header-nav__states-item
+                            a(href="#" class="header-nav__states-link")
+                                img(src="images/state-icon-3.png" alt="Icon: state-icon")
+                        li.header-nav__states-item
+                            a(href="#" class="header-nav__states-link")
+                                img(src="images/state-icon-4.png" alt="Icon: state-icon")
+                    
+
+
+
+            
+
+        // Header block end
+        main
+            block content
+
+        
+
+        block jsIncludes

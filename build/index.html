@@ -1,0 +1,849 @@
+
+<!-- Mixin for color schemes in design aside block-->
+<!-- Mixin for Legend block--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content=" ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS-->
+    <!-- Fonts-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Site Styles-->
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <!-- Site Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Header block begin-->
+    <header class="header" id="header">
+      <div class="container header__wrap">
+        <h1 class="logo">Logo Example</h1>
+        <nav class="header-nav">
+          <ul class="header-nav__style">
+            <li class="header-nav__style-item"><a class="header-nav__style-link" href="#"><img src="images/style-icon-1.png" alt="Icon: style-icon"></a></li>
+            <li class="header-nav__style-item"><a class="header-nav__style-link" href="#"><img src="images/style-icon-2.png" alt="Icon: style-icon"></a></li>
+            <li class="header-nav__style-item"><a class="header-nav__style-link" href="#"><img src="images/style-icon-3.png" alt="Icon: style-icon"></a></li>
+            <li class="header-nav__style-item"><a class="header-nav__style-link" href="#"><img src="images/style-icon-4.png" alt="Icon: style-icon"></a></li>
+          </ul>
+          <ul class="header-nav__states">
+            <li class="header-nav__states-item header-nav__states-item_save"><a class="header-nav__states-link" href="#">
+                <button class="calendar__button calendar__button_saved">Saved</button></a></li>
+            <li class="header-nav__states-item header-nav__states-item_create"><a class="header-nav__states-link" href="#">
+                <button class="calendar__button calendar__button_create">Create</button></a></li>
+            <li class="header-nav__states-item"><a class="header-nav__states-link" href="#"><img src="images/state-icon-1.png" alt="Icon: state-icon"></a></li>
+            <li class="header-nav__states-item"><a class="header-nav__states-link header-nav__states-link_design" href="#"><img src="images/state-icon-2.png" alt="Icon: state-icon"></a></li>
+            <li class="header-nav__states-item"><a class="header-nav__states-link" href="#"><img src="images/state-icon-3.png" alt="Icon: state-icon"></a></li>
+            <li class="header-nav__states-item"><a class="header-nav__states-link" href="#"><img src="images/state-icon-4.png" alt="Icon: state-icon"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Header block end-->
+    <main>
+      <!-- Calendar header + timeline begin-->
+      <section class="container calendar__header default">
+        <div class="calendar__block calendar__timeline"> 
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header calendar__timeline-header"><img src="images/calendar-timline-icon.png" alt="Icon: calendar"></div>
+            <div class="calendar__col_subheader calendar__timeline-subheader">
+              <time datetime="2016-01-01">01.01.2016</time>
+              <p>-</p>
+              <time datetime="2018-01-01">01.01.2018</time>
+            </div>
+            <div class="calendar__col_container">
+              <div class="calendar__block timeline">
+                <!-- Timeline begin-->
+                <div class="calendar__row timeline__wrap">
+                  <!--input(type="range" min="1" max="24" id="size" value="1")--><span class="example-val calendar__col" id="date-start"></span>
+                  <div class="noUi-target noUi-ltr noUi-horizontal calendar__col calendar__col_ful-width" id="date-slider"></div><span class="example-val calendar__col" id="date-end"></span>
+                </div>
+                <!-- Timeline end-->
+                <div class="calendar__row">
+                  <div class="calendar__col_container calendar__block">
+                    <!-- Background table begin-->
+                    <div class="calendar__block calendar__bg">
+                      <div class="calendar__row calendar__row_empty">
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                    </div>
+                    <!-- Background table end-->
+                    <!-- Content table begin-->
+                    <div class="calendar__block calendar__content">
+                      <div class="calendar__row calendar__row_empty">
+                        <div class="calendar__col calendar__col_span-3">
+                          <p>Q1&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-3">
+                          <p>Q2&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-1">
+                          <p>J&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-1">
+                          <p>A&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-1">
+                          <p>S&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-1">
+                          <p>O&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-1">
+                          <p>N&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-1">
+                          <p>D&apos;16</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-6">
+                          <p>H1&apos;17</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-3">
+                          <p>Q3&apos;17</p>
+                        </div>
+                        <div class="calendar__col calendar__col_span-3">
+                          <p>Q4&apos;17</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Content table end-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Calendar header + timeline end-->
+      <!-- Main calendar part begin-->
+      <!--Design section begin-->
+      <section class="category container">
+        <!-- Background table begin-->
+        <div class="calendar__block calendar__bg"> 
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header"></div>
+            <div class="calendar__col_container">
+              <div class="calendar__block">
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background table end-->
+        <!-- Content table begin-->
+        <div class="calendar__block calendar__content">
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header">
+              <div class="calendar__col_header-wrap">
+                <h2 class="calendar__heading">Design UX</h2>
+              </div>
+            </div>
+            <div class="calendar__col_container">
+              <div class="calendar__block">
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__research_subheader">
+                      <h3 class="calendar__subheading">Research</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-1 calendar__research"><a class="calendar__link" href="#">Dashboard</a></div>
+                  <div class="calendar__col calendar__col_span-2"></div>
+                  <div class="calendar__col calendar__col_span-3 calendar__research"><a class="calendar__link" href="#">Template</a></div>
+                  <div class="calendar__col calendar__col_span-9"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__inprogress_subheader">
+                      <h3 class="calendar__subheading">In progress</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col calendar__col_span-6 calendar__inprogress"><a class="calendar__link" href="#">UX</a></div>
+                  <div class="calendar__col calendar__col_span-7"></div>
+                  <div class="calendar__col calendar__col_span-1 calendar__inprogress"><a class="calendar__link" href="#">Flow design</a></div>
+                  <div class="calendar__col calendar__col_span-4"></div>
+                  <div class="calendar__col calendar__col_span-3 calendar__inprogress"><a class="calendar__link" href="#">UX</a></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__backlog_subheader"> 
+                      <h3 class="calendar__subheading">Backlog</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-1 calendar__backlog"> <a class="calendar__link" href="#">Flat design</a></div>
+                        <div class="calendar__col calendar__col_span-9"></div>
+                        <div class="calendar__col calendar__col_span-4"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-2"></div>
+                        <div class="calendar__col calendar__col_span-4 calendar__backlog"> <a class="calendar__link" href="#">Prototyping</a></div>
+                        <div class="calendar__col calendar__col_span-9"></div>
+                        <div class="calendar__col calendar__col_span-3 calendar__backlog"> <a class="calendar__link" href="#">Private Policy</a></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content table end-->
+      </section>
+      <!--Design section end-->
+      <!-- Slicing section begin-->
+      <section class="category container">
+        <!-- Background table begin-->
+        <div class="calendar__block calendar__bg"> 
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header"></div>
+            <div class="calendar__col_container">
+              <div class="calendar__block">
+                <div class="calendar__row calendar__row_empty">
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background table end-->
+        <!-- Content table begin-->
+        <div class="calendar__block calendar__content">
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header">
+              <div class="calendar__col_header-wrap">
+                <h2 class="calendar__heading">Slicing</h2>
+              </div>
+            </div>
+            <div class="calendar__col_container">
+              <div class="calendar__block">
+                <div class="calendar__row calendar__row_empty">
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__research_subheader">
+                      <h3 class="calendar__subheading">Research</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__inprogress_subheader">
+                      <h3 class="calendar__subheading">In progress</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-8"></div>
+                        <div class="calendar__col calendar__col_span-3 calendar__inprogress"><a class="calendar__link" href="#">Home page Design</a></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1 calendar__inprogress"><a class="calendar__link" href="#">Home page Design</a></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__reopened_subheader">
+                      <h3 class="calendar__subheading">Reopened</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-7"></div>
+                        <div class="calendar__col calendar__col_span-3 calendar__reopened"><a class="calendar__link" href="#">Home page Design</a></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-2 calendar__reopened"><a class="calendar__link" href="#">Buttons</a></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-4 calendar__reopened"><a class="calendar__link" href="#">Planing</a></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__none_subheader">
+                      <h3 class="calendar__subheading">Status: None</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-2half calendar__none"><a class="calendar__link" href="#">Terra</a></div>
+                        <div class="calendar__col calendar__col_span-2half"></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-2"></div>
+                        <div class="calendar__col calendar__col_span-1half"></div>
+                        <div class="calendar__col calendar__col_span-1half calendar__none"> <a class="calendar__link" href="#">Incognito</a></div>
+                        <div class="calendar__col calendar__col_span-9"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content table end-->
+      </section>
+      <!-- Slicing section end-->
+      <!-- Architecture section begin-->
+      <section class="category container">
+        <!-- Background table begin-->
+        <div class="calendar__block calendar__bg"> 
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header"></div>
+            <div class="calendar__col_container">
+              <div class="calendar__block">
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-1"></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-1"></div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background table end-->
+        <!-- Content  table begin-->
+        <div class="calendar__block calendar__content">
+          <div class="calendar__row calendar__row_container">
+            <div class="calendar__col_header">
+              <div class="calendar__col_header-wrap">
+                <h2 class="calendar__heading">Architecture</h2>
+              </div>
+            </div>
+            <div class="calendar__col_container">
+              <div class="calendar__block">
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__research_subheader">
+                      <h3 class="calendar__subheading">Research</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col calendar__col_span-6"></div>
+                  <div class="calendar__col calendar__col_span-1 calendar__research"><a class="calendar__link" href="#">Dashboard</a></div>
+                  <div class="calendar__col calendar__col_span-10"></div>
+                  <div class="calendar__col calendar__col_span-7"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__inprogress_subheader">
+                      <h3 class="calendar__subheading">In progress</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col calendar__col_span-10"></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                  <div class="calendar__col calendar__col_span-1 calendar__inprogress"><a class="calendar__link" href="#">Flow design</a></div>
+                  <div class="calendar__col calendar__col_span-4"></div>
+                  <div class="calendar__col calendar__col_span-3 calendar__inprogress"><a class="calendar__link" href="#">UX</a></div>
+                  <div class="calendar__col calendar__col_span-3"></div>
+                </div>
+                <div class="calendar__row calendar__row_container">
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__backlog_subheader">
+                      <h3 class="calendar__subheading">Backlog</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col_container">
+                    <div class="calendar__block"> 
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-1 calendar__backlog"><a class="calendar__link" href="#">Flat design</a></div>
+                        <div class="calendar__col calendar__col_span-10"></div>
+                        <div class="calendar__col calendar__col_span-3"></div>
+                      </div>
+                      <div class="calendar__row"> 
+                        <div class="calendar__col calendar__col_span-2"></div>
+                        <div class="calendar__col calendar__col_span-4 calendar__backlog"><a class="calendar__link" href="#">Prototyping</a></div>
+                        <div class="calendar__col calendar__col_span-9"></div>
+                        <div class="calendar__col calendar__col_span-3 calendar__backlog"><a class="calendar__link" href="#">Private Policy</a></div>
+                        <div class="calendar__col calendar__col_span-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__new_subheader">
+                      <h3 class="calendar__subheading">New</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col calendar__col_span-10"></div>
+                  <div class="calendar__col calendar__col_span-7"></div>
+                  <div class="calendar__col calendar__col_span-2 calendar__new"><a class="calendar__link" href="#">Programming</a></div>
+                  <div class="calendar__col calendar__col_span-5"></div>
+                </div>
+                <div class="calendar__row"> 
+                  <div class="calendar__col_subheader">
+                    <div class="calendar__col calendar__completed_subheader">
+                      <h3 class="calendar__subheading">Completed</h3>
+                    </div>
+                  </div>
+                  <div class="calendar__col calendar__col_span-2 calendar__completed"><a class="calendar__link" href="#">Meeting</a></div>
+                  <div class="calendar__col calendar__col_span-5"></div>
+                  <div class="calendar__col calendar__col_span-1 calendar__completed"><a class="calendar__link" href="#">Meeting</a></div>
+                  <div class="calendar__col calendar__col_span-10"></div>
+                  <div class="calendar__col calendar__col_span-8"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content table end-->
+      </section>
+      <!-- Architecture section end-->
+      <!-- Main calendar part end-->
+      <!-- Design aside (hidden) begin-->
+      <aside class="design-aside">
+        <h4 class="aside__title">Design</h4>
+        <div class="accordion">
+          <!-- Layout block begin-->
+          <div class="accordion__item"><a class="accordion__trigger" data-trigger="trigger"> 
+              <h5 class="aside__title_menu">Layout</h5></a>
+            <div class="accordion__sub-item">
+              <label for="header-select">Header</label>
+              <div class="aside__select-wrapper">
+                <select id="header-select">
+                  <option disabled selected>Category</option>
+                  <option value="ux-design">UX Design</option>
+                  <option value="slicing">Slicing</option>
+                  <option value="architecture">Architecture</option>
+                </select>
+              </div>
+              <label for="subheader-select">Subheader</label>
+              <div class="aside__select-wrapper">
+                <select id="subheader-select">
+                  <option disabled selected>Status</option>
+                  <option value="research">Research</option>
+                  <option value="inprogress">In progress</option>
+                  <option value="backlog">Backlog</option>
+                  <option value="reopened">Reopened</option>
+                  <option value="none">Status: none</option>
+                  <option value="new">New</option>
+                  <option value="completed">Completed</option>
+                </select>
+              </div>
+              <label for="item-label-select">Item label</label>
+              <div class="aside__select-wrapper">
+                <select id="item-label-select">
+                  <option disabled selected>Task name</option>
+                  <option value="design">Home page Design</option>
+                  <option value="ux">UX</option>
+                  <option value="policy">Private Policy</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Layout block end-->
+          <!-- Colors block begin-->
+          <div class="accordion__item"><a class="accordion__trigger" data-trigger="trigger">
+              <h5 class="aside__title_menu">Colors</h5></a>
+            <div class="accordion__sub-item">
+              <label for="color-by-select">Color by</label>
+              <div class="aside__select-wrapper">
+                <select id="color-by-select">
+                  <option disabled selected>Status</option>
+                  <option value="research">Research</option>
+                  <option value="inprogress">In progress</option>
+                  <option value="backlog">Backlog</option>
+                  <option value="reopened">Reopened</option>
+                  <option value="none">Status: none</option>
+                  <option value="new">New</option>
+                  <option value="completed">Completed</option>
+                </select>
+              </div>
+              <div class="aside__color-check">
+                <input type="checkbox" id="subheader-inherits">
+                <label for="subheader-inherits">Subheader inherits header color</label>
+              </div>
+              <label>Header color</label>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#f1f8fe" id="header1" style="background: #f1f8fe;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="header1-label" value="Header"/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#89c0f1" id="header2" style="background: #89c0f1;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="header2-label" value=""/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#1f8beb" id="header3" style="background: #1f8beb;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="header3-label" value=""/>
+              </div>
+              <label class="aside__color-h">Subheaders color</label>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#ff6197" id="subheader1" style="background: #ff6197;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="subheader1-label" value="Research"/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#fed100" id="subheader2" style="background: #fed100;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="subheader2-label" value="In progress"/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#39cf7c" id="subheader3" style="background: #39cf7c;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="subheader3-label" value="Backlog"/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#ff6666" id="subheader4" style="background: #ff6666;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="subheader4-label" value="Reopened"/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#00c5fe" id="subheader5" style="background: #00c5fe;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="subheader5-label" value="New"/>
+              </div>
+              <div class="aside__color-check">
+                <div class="aside__color-wrap">
+                  <input type="color" value="#7d97ae" id="subheader6" style="background: #7d97ae;"/>
+                </div>
+                <input class="aside__color-label" type="text" name="subheader6-label" value="None"/>
+              </div>
+            </div>
+          </div>
+          <!-- Colors block end-->
+        </div>
+      </aside>
+      <!-- Design aside (hidden) end				-->
+      <!-- Legend block begin				-->
+      <div class="legend"><img src="images/legend-icon.png" alt="Icon: legend ask">
+        <div class="legend__block">
+          <h5>Status:</h5>
+          <div class="legend__item">
+            <div class="legend__color" style="background: #ff6197;"></div>
+            <p>Research</p>
+          </div>
+          <div class="legend__item">
+            <div class="legend__color" style="background: #fed100;"></div>
+            <p>In progress</p>
+          </div>
+          <div class="legend__item">
+            <div class="legend__color" style="background: #39cf7c;"></div>
+            <p>Backlog</p>
+          </div>
+          <div class="legend__item">
+            <div class="legend__color" style="background: #ff6666;"></div>
+            <p>Reopened</p>
+          </div>
+          <div class="legend__item">
+            <div class="legend__color" style="background: #00c5fe;"></div>
+            <p>New</p>
+          </div>
+          <div class="legend__item">
+            <div class="legend__color" style="background: #7d97ae;"></div>
+            <p>None</p>
+          </div>
+        </div>
+      </div>
+      <!-- Legend block end-->
+      <!-- Expand icon-->
+      <div class="expand"><img src="images/expand-icon.png" alt="Icon: expand"></div>
+    </main>
+    <!-- jQuery (necessary for some JavaScript plugins)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Multiple slider for timeline-->
+    <script src="js/nouislider.min.js"></script>
+    <!-- General options -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
